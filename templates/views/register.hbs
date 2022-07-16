@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    {{>header}}
+</head>
+
+<body>
+
+    {{>navbar}}
+    <div class="main">
+        <div class="form">
+            <form action="/register" method="POST">
+                <label for="firstname">First name:</label>
+                <input type="text" placeholder="Your first name" name="firstname" value="" />
+                <label for="lastname">Last name:</label>
+                <input type="text" placeholder="Your last name" name="lastname" value="" />
+                <label for="email">Email</label>
+                <input type="email" placeholder="Your email" name="email" value="" />
+                <label for="gender">Gender</label>
+                <input type="radio" name="gender" value="male" checked /><span>Male</span>
+                <input type="radio" name="gender" value="female" /><span>Female</span>
+                <label for="mobile">Mobile number</label>
+                <input type="text" placeholder="Your mobile no." name="mobile" minlength="10" maxlength="10" value="" />
+                <label for="age">Age:</label>
+                <input type="text" placeholder="Your age" name="age" value="" />
+                <label for="password">Password</label>
+                <input type="password" placeholder="Password" name="password" value="" />
+                <label for="confirmpassword">Confirm Password</label>
+                <input type="password" placeholder="Confirm password" name="confirmpassword" value="" />
+                <input type="submit" value="Register" />
+
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
